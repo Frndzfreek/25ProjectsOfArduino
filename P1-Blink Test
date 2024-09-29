@@ -1,0 +1,15 @@
+Basic BLINK TEST to check whether the arduino is in working condition
+CODE:
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initializing digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);  // turns the builtin led on (HIGH is the voltage level)
+  delay(1000);                      // wait for ONE second
+  digitalWrite(LED_BUILTIN, LOW);   // turns the builtin led off by making the voltage LOW
+  delay(1000);                      // wait for ONE second
+}
