@@ -1,0 +1,27 @@
+BELOW IS THE CODE FOR MIXING OF COLOURS USING THE FOUR PIN LED (RBG LED) WITH ARDUINO:
+//Initialising the inputs
+int red=9;
+int green=10;
+int blue=11;
+//setting up the void setup()
+void setup() {
+  pinMode(red,OUTPUT);
+  pinMode(green,OUTPUT);
+  pinMode(blue,OUTPUT);
+}
+//setting the loop of the code by void loop():
+ void loop() {
+  digitalWrite(red,HIGH);
+  delay(1000);
+  digitalWrite(red,LOW);
+  delay(1000);
+  digitalWrite(green,HIGH);
+  delay(1000);
+  digitalWrite(green,LOW);
+  delay(1000);
+  digitalWrite(blue,HIGH);
+  delay(1000);
+  digitalWrite(red,LOW);
+  delay(1000);
+ }
+//this above code ensures to display all of colours by mixxing up and can also be done by adjusting the delay function
