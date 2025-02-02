@@ -17,7 +17,7 @@ void setup(){
 }
 
 void loop(){
-  if (digitalRead(irSensorPin)==HIGH){
+  if (digitalRead(irSensor)==HIGH){
     digitalWrite(ledPin,HIGH);
   }
   else{
